@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_course_selction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.android.shustudenthelper.CourseSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_shu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/shuhome_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_shu"
+            android:layout_gravity="center_horizontal"
+            android:text="SHU STUDENT HELPER"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Widget.Design.CoordinatorLayout"
+            android:textColor="@color/gray"
+            android:textSize="24sp"
+            android:textStyle="italic|bold"/>
+
+
+    </LinearLayout>
+
+    <!-- Select Question Process -->
+    <!--
+    <LinearLayout
+        android:id="@+id/courseone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_one"
+            android:layout_weight="2"
+            android:textSize="@dimen/activity_horizontal_margin"/>
+
+
+        <Spinner
+
+            android:id="@+id/courseone_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:prompt="@string/course_prompt">
+
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/coursetwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_two"
+            android:layout_weight="2"
+            android:textSize="@dimen/activity_horizontal_margin"/>
+
+
+        <Spinner
+
+            android:id="@+id/coursetwo_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:prompt="@string/course_prompt">
+
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/coursethree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_three"
+            android:layout_weight="2"
+            android:textSize="@dimen/activity_horizontal_margin"/>
+
+
+        <Spinner
+
+            android:id="@+id/coursethree_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/course_array"
+            android:prompt="@string/course_prompt">
+
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/coursefour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_four"
+            android:layout_weight="2"
+            android:textSize="@dimen/activity_horizontal_margin"/>
+
+
+        <Spinner
+
+            android:id="@+id/coursefour_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/course_array"
+            android:prompt="@string/course_prompt">
+
+        </Spinner>
+    </LinearLayout> -->
+
+
+    <ListView
+        android:id="@+id/listview_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        style="@style/Base.Widget.AppCompat.ListView.DropDown"/>
+    <Button
+        android:id="@+id/course_register_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="showResult"
+        android:text="Confirm"
+        android:textStyle="bold" />
+</LinearLayout>

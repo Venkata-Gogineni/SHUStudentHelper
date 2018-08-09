@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/coursedetails_nametext_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Course Name: "
+            android:textSize="16sp"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/coursedetails_name_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/coursedetails_nametext_display"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/coursedetails_codetext_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Course Code: "
+            android:textSize="16sp"
+            android:layout_weight="3"
+            />
+
+        <TextView
+
+            android:id="@+id/coursedetails_code_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/coursedetails_codetext_display"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/primary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/coursedetails_proftext_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Professor :"
+            android:textSize="16sp"
+            android:layout_weight="3"/>
+
+        <TextView
+
+            android:id="@+id/coursedetails_Professor_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/coursedetails_proftext_display"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/primary" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/coursedetails_clatext_display"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Course CLA: "
+                android:textSize="16sp"
+                android:layout_weight="3"/>
+
+            <TextView
+
+                android:id="@+id/coursedetails_cla_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/coursedetails_clatext_display"
+                android:textColor="@color/primary" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/coursedetails_classtimingstext_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Course timings: "
+            android:textSize="16sp"
+            android:layout_weight="3"/>
+
+        <TextView
+
+            android:id="@+id/coursedetails_classtimings_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/coursedetails_classtimingstext_display"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/primary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/coursedetails_classroomtext_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Class Room: "
+            android:layout_weight="3"/>
+
+        <TextView
+
+            android:id="@+id/coursedetails_classroom_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/coursedetails_classroomtext_display"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/primary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/coursedetails_textbooktext_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Text book: "
+            android:layout_weight="3"/>
+
+        <TextView
+
+            android:id="@+id/coursedetails_textbook_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/coursedetails_textbooktext_display"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/primary" />
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/assignments_textbox_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:text="assignments/exams:"
+        android:textColor="@color/primary" />
+
+</LinearLayout>

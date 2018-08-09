@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/event_name_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:text="Event: "/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/event_start_time_text_display"
+            android:layout_width="150dp"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Event time: "/>
+
+        <TextView
+            android:id="@+id/event_start_time_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/event_start_time_text_display"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/event_start_date_text_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Event date:"
+            android:layout_weight="3"
+            />
+
+        <TextView
+
+            android:id="@+id/event_start_date_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/event_start_date_text_display"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:textColor="@color/primary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/event_venue_text_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Venue :"
+            android:layout_weight="3"/>
+
+        <TextView
+
+            android:id="@+id/event_venue_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/event_venue_text_display"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/primary" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/event_ticket_price_text_display"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Ticket price: "
+            android:textSize="24sp"
+            android:layout_weight="3"/>
+
+        <TextView
+
+            android:id="@+id/event_ticket_price_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/event_ticket_price_text_display"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/primary" />
+
+    </RelativeLayout>
+
+</LinearLayout>

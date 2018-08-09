@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">SHU Student Helper</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="login_user">Login</string>
+    <string name="title_activity_login">SHU Student-Sign in</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_shu">S</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="forgot_password">Forgot Password</string>
+
+
+    <!-- Strings related to Register -->
+    <string name="enter_password">Password</string>
+    <string name="confirm_password">Confirm</string>
+    <string name="user_sign_up">Register</string>
+
+    <!-- Strings related to Password Recovery -->
+    <string name="note_to_user">Please select from the drop down to choose your favourite question</string>
+    <string name="securityquestion_askuser">Security question :</string>
+    <string name="answer_askuser">Security answer :</string>
+    <string name="next_setup">Next</string>
+
+    <string name="enter_answer">Answer</string>
+    <string name="question_prompt">Choose a question</string>
+    <string-array name="question_array">
+        <item>Mother maiden name</item>
+        <item>Pet name</item>
+        <item>Your first car</item>
+        <item>Favourite Color</item>
+    </string-array>
+
+    <!-- Strings related to Password Recovery -->
+    <string name="course_one">Course selection :</string>
+    <string name="course_two">Course selection :</string>
+    <string name="course_three">Course selection :</string>
+    <string name="course_four">Course selection :</string>
+    <string name="course_prompt">Choose a course</string>
+
+    <string-array name="course_array">
+        <item>CS501</item>
+        <item>CS505</item>
+        <item>CS551</item>
+        <item>CS603</item>
+        <item>CS604</item>
+        <item>CS620</item>
+        <item>CS670</item>
+    </string-array>
+
+    <!-- Strings related to Notifications -->
+    <string name="notifications_onoff">Course Notifications :</string>
+    <string name="weather_onoff">Weather :</string>
+    <string name="drivetime_onoff">Duration :</string>
+    <string name="drivetype_choose">Drive type :</string>
+    <string name="finish_setup_button">Finish</string>
+    <string name="drive_type_prompt">Choose drive type</string>
+
+    <!-- Strings related to Forgot Password -->
+    <string name="recovery_show_buttontext">Show Login Details</string>
+    <string name="okay">Ok</string>
+
+
+    <string-array name="drive_type_array">
+        <item>car</item>
+        <item>bus</item>
+        <item>walk</item>
+        <item>train</item>
+    </string-array>
+    <string name="title_activity_my_custom_home">MyCustomHomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_change_password">Sign in</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="secret_key_encryption">suryachakriulfa</string>
+
+
+</resources>
