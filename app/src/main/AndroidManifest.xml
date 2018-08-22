@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:name=".App"
@@ -26,15 +28,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UserloginActivity"
+            android:name=".userlogin.UserloginActivity"
             android:label="@string/title_activity_login"
-            android:theme="@style/LoginTheme" />
+            android:theme="@style/LoginTheme" >
 
         <intent-filter>
             <action android:name="com.example.android.shustudenthelper.UserloginActivity" />
 
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
+        </activity>
 
         <activity
             android:name=".HomeActivity"
@@ -171,8 +174,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
     </activity>
-        <uses-permission android:name="android.permission.VIBRATE" />
-        <uses-permission android:name="android.permission.WAKE_LOCK" />
 
         <receiver android:name=".MyReceiver">
 

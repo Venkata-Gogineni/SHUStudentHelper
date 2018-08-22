@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.android.shustudenthelper.userlogin.UserloginActivity;
+
 import java.security.MessageDigest;
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -22,12 +24,7 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.spec.SecretKeySpec;
 
-import static com.example.android.shustudenthelper.UserloginActivity.USERNAME;
 import static com.example.android.shustudenthelper.UsernameRegisterActivity.MyPREFERENCES;
-import static com.example.android.shustudenthelper.UsernameRegisterActivity.encodedPassword;
-import static com.example.android.shustudenthelper.UsernameRegisterActivity.encodedUserName;
-import static com.example.android.shustudenthelper.UsernameRegisterActivity.userEmailSharedPrefValue;
-import static com.example.android.shustudenthelper.UsernameRegisterActivity.userPasswordSharedPrefValue;
 import static com.example.android.shustudenthelper.UsernameRegisterActivity.userpassword_stringstore;
 import static com.example.android.shustudenthelper.UsernameRegisterActivity.userpasswordconfirm_stringstore;
 
@@ -90,7 +87,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
                     setLoginDetailsSharedPreferences(userpasswordconfirm_stringstore, verifyPassword);
 
                     //send the user to login
-                    Intent intent = new Intent(ChangePasswordActivity.this, com.example.android.shustudenthelper.UserloginActivity.class);
+                    Intent intent = new Intent(ChangePasswordActivity.this, UserloginActivity.class);
                     startActivity(intent);
 
                 }else if(!currentEnteredPassword.equals(PASSWORD) || !newPassword.equals(verifyPassword))

@@ -3,7 +3,6 @@ package com.example.android.shustudenthelper;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
@@ -11,11 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -23,10 +19,6 @@ import java.util.Arrays;
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.spec.SecretKeySpec;
-
-import static android.R.attr.value;
-import static android.os.Build.VERSION_CODES.N;
-import static com.example.android.shustudenthelper.UserloginActivity.USERNAME;
 
 public class UsernameRegisterActivity extends AppCompatActivity {
     /*Encryption variables and keys*/

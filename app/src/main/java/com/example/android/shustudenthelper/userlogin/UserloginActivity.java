@@ -1,11 +1,10 @@
-package com.example.android.shustudenthelper;
+package com.example.android.shustudenthelper.userlogin;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
@@ -15,13 +14,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.android.shustudenthelper.R;
+import com.example.android.shustudenthelper.UsernameRegisterActivity;
+
 import java.security.MessageDigest;
 import java.util.Arrays;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-import static android.R.string.cancel;
 import static com.example.android.shustudenthelper.R.id.email;
 import static com.example.android.shustudenthelper.R.id.forgotpassword;
 import static com.example.android.shustudenthelper.UsernameRegisterActivity.MyPREFERENCES;
